@@ -261,7 +261,7 @@ input[type=submit] {
 }
 @media screen and (max-width: 768px) {
   .container {width: 100%;
-    max-width: 960px;
+    max-width: 768px;
     margin: 0 auto;
     clear: both;
     
@@ -269,7 +269,7 @@ input[type=submit] {
   .main-section {
     float: left;
     width: 100%;
-    max-width: 960px;
+    max-width: 768px;
     padding: 30px;
     margin: 0 0 40px;
     background: #ffffff;
@@ -283,7 +283,7 @@ input[type=submit] {
     overflow: auto;
   }
   .work h3 {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     width: 100%;
     padding: 15px;
@@ -297,13 +297,13 @@ input[type=submit] {
   }
 }@media screen and (max-width: 640x) {
   .container {width: 100%;
-    max-width: 960px;
+    max-width: 640px;
     margin: 0 auto;
     clear: both;
     
   }
   .work h3 {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     width: 100%;
     padding: 15px;
@@ -332,7 +332,7 @@ input[type=submit] {
     overflow: auto;
   }
   .work h3 {
-    position: absolute;
+    position: relative;
     bottom: 20px;
     width: 100%;
     padding: 15px;
