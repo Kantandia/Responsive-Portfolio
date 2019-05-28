@@ -295,7 +295,7 @@ input[type=submit] {
     background: #4aaaa5;
     border-bottom: 0;
   }
-}@media screen and (max-width: 640x) {
+}@media screen and (max-width: 640px) {
   .container {width: 100%;
     max-width: 640px;
     margin: 0 auto;
@@ -304,7 +304,7 @@ input[type=submit] {
   }
   .work h3 {
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
     width: 100%;
     padding: 15px;
     margin-bottom: 0;
@@ -318,8 +318,8 @@ input[type=submit] {
   .main-section {
     float: left;
     width: 100%;
-    max-width: 960px;
-    padding: 30px;
+    max-width: 640px;
+    padding: 18px;
     margin: 0 0 40px;
     background: #ffffff;
     border: 1px solid #dddddd;
@@ -327,21 +327,9 @@ input[type=submit] {
   .work {
     position: relative;
     float: left;
-    width: 274px;
-    margin: 20px 0 25px;
+    width: 140px;
+    margin: 14px 0 18px;
     overflow: auto;
   }
-  .work h3 {
-    position: relative;
-    bottom: 20px;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-    color: #ffffff;
-    text-align: center;
-    background: #4aaaa5;
-    border-bottom: 0;
-  }
+  
 }
