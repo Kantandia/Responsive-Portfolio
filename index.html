@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+    <div>
+      <div>Make<span></span></div>
+      <div>Model<span></span></div>
+      <div>Color<span></span></div>
+      <div>Mileage<span></span></div>
+      <div>isWorking<span></span></div>
+    </div>
+    <script>
+
+        //var key = ["d", "f", "g"];
+      var car = {
+
+        //this: "car",
+        make: "Honda",
+        model: "Fit",
+        color: "Blue Raspberry",
+        mileage: 3000,
+        isWorking: true,
+        driveToWork: function() {
+          alert("Old Mileage: " + this.mileage);
+          this.mileage = this.mileage + 8;
+          alert("New mileage: " + this.mileage);
+        },
+        driveAroundWorld: function() {
+          alert("Old Mileage: " + this.mileage);
+          this.mileage = this.mileage + 24000;
+          alert("New Mileage: " + this.mileage);
+          alert("Car needs a tuneup!");
+          this.isWorking = false;
+        },
+        getTuneUp: function() {
+          alert("Car is ready to go!");
+          this.isWorking = true;
+        },
+        honk: function() {
+          alert("Honk! Honk!");
+        },
+        reWriteStats: function() {
+            alert("Get Smoked!!!!!!" + this.make);
+            //alert("Get Smoked!!!!!!" + this.model);
+            //alert("Get Smoked!!!!!!" + this.color);
+            //alert("Get Smoked!!!!!!" + this.mileage);
+            this.isWorking = true
+            makeSpan.textContent = car.make;
+            makeSpan.textContent = car.model;
+            makeSpan.textContent = car.color;
+            makeSpan.textContent = car.mileage;
+            makeSpan.textContent = car.isWorking;
+
+
+        }
+      };
+
+     document.onkeyup = function (event) {
+
+        var userKey = event.key;
+
+
+        if (userKey === "d") {
+            car.driveToWork();
+            car.reWriteStats();
+
+
+        } else if (userKey === "f") {
+            car.driveAroundWorld();
+            car.reWriteStats();
+
+        
+        } else if (userKey === "g") {
+            car.getTuneUp();
+            car.reWriteStats();
+        } else if (userKey === "h") {
+            car.honk();
+            car.reWriteStats();
+        }
+
+        
+     }
+      // How would we log...
+      // The car's make?
+      console.log(car.make);
+      // The car's model?
+      console.log(car.model);
+      // The car's mileage?
+      console.log(car.mileage);
+      // How would we run the car's driveToWork method?
+     //  car.driveToWork();
+    
+      // How would we run the car's driveAroundWorld method?
+     //car.driveAroundWorld();
+
+      // How would we run the getTuneUp method?
+      //car.getTuneUp();
+
+
+      document.write(car.reWriteStats);
+    </script>
+    
+
+
+    <h1>
+
+
+
+
+
+    </h1>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <title>Geoff Goodwin - Developer Page</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div id="headerPlusBody">
+  <div id="topRow">
+    <div id="headerContainer">
+      <div id="header">
+        <div id="logoName">
+          <h1>Geoff Goodwin</h1>
+        </div>
+        <div id="navLinkFarm">
+          <table id="navLinkTable">
+            <tr>
+              <td class="table33">
+                <a href="index.html" class="headerLink">About</a>
+              </td>
+              <td id="centerLink">
+                <a href="portfolio.html" class="headerLink">Portfolio</a>
+              </td>
+              <td class="table33">
+                <a href="contact.html" class="headerLink" id="headerLinkRight">Contact</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--BODY SECTION-->
+
+  <div id="contentContainer" align="center">
+
+    <div class="content">
+
+      <!--====================================================================-->
+
+      <div class="contentSection mainBodyContainer">
+        <h1 class="mainBodyCaption">Contact</h1>
+        <hr>
+        <div class="container">
+          <form action="mailto:ggoodwin.dev@gmail.com" method="post">
+
+            <!-- FIRST NAME FIELD -->
+            <div>
+              <label for="firstName">First Name</label>
+              <br>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your first / given name"
+                     maxlength="50" required autofocus>
+              <div class="requirements">Must be a valid name</div>
+            </div>
+
+            <!-- LAST NAME FIELD -->
+            <div>
+              <label for="lastName">Last Name</label>
+              <br>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter your last / family name"
+                     maxlength="50" required>
+              <div class="requirements">Must be a valid name</div>
+            </div>
+
+            <!-- EMAIL FIELD -->
+            <div>
+              <label for="contactEmail">Email</label>
+              <br>
+              <input type="email" id="contactEmail" name="contactEmail" placeholder="sample@domain.com" maxlength="100" required>
+              <div class="requirements">Please enter a valid email address.</div>
+            </div>
+
+            <!-- MESSAGE TEXT FIELD -->
+            <div>
+              <label for="messageContent">Message</label>
+              <br>
+              <textarea id="messageContent" name="messageContent" maxlength="5000" required></textarea>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+          </form>
+        </div>
+      </div>
+
+      <!--====================================================================-->
+
+      <!-- RIGHT SIDE CONNECT WITH ME BOX -->
+
+      <div id="connectWithMeContainer" class="contentSection">
+        <h2 id="connectWithMeCaption">Connect with Me</h2>
+        <hr>
+        <table id="logoFarm" width="100%">
+          <tr>
+            <td align="center"><a href="https://github.com/Geoff-Goodwin-Dev" target="_blank"><img src="assets/images/logo-github.png" width="45px" class="logoLink"></a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/geoff-goodwin-dev/" target="_blank"><img src="assets/images/logo-linkedin.png" width="45px" class="logoLink"></a></td>
+            <td align="center"><a href="https://stackoverflow.com/users/9107950/geoff-goodwin" target="_blank"><img src="assets/images/logo-stackoverflow.png" width="45px" class="logoLink"></a></td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer id="footer">
+  Copyright &copy Geoffrey Goodwin 2017
+</footer>
+
+</body>
+</html>
